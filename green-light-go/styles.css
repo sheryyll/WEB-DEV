@@ -1,0 +1,95 @@
+/* Basic reset and layout */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #a8c0a0, #738a5e);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.hint {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* Traffic light box */
+#traffic-light-div {
+  border: 6px solid #222;
+  border-radius: 30px;
+  width: 160px;
+  height: 420px;
+  background-color: #444;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+/* Click animation */
+#traffic-light-div:active {
+  transform: scale(0.97);
+}
+
+/* Light styles */
+.light {
+  border: 3px solid #111;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #222;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease;
+}
+
+/* Glow effects */
+.glow-red {
+  background-color: #ff4c4c;
+  box-shadow: 0 0 30px #ff4c4c;
+}
+
+.glow-yellow {
+  background-color: #fff47d;
+  box-shadow: 0 0 30px #fff47d;
+}
+
+.glow-green {
+  background-color: #7dff7d;
+  box-shadow: 0 0 30px #7dff7d;
+}
+
+/* Status text */
+.status-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  transition: color 0.4s ease;
+}
+
+.status-stop {
+  color: #ff4c4c;
+}
+
+.status-wait {
+  color: #fff47d;
+}
+
+.status-go {
+  color: #7dff7d;
+}
