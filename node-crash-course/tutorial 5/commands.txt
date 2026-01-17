@@ -1,0 +1,5 @@
+To install:
+- package.json : npm init -y
+- loadash: npm i --save loadash || npm i loadash
+- to install dependencies: npm install 
+- express: npm install express
